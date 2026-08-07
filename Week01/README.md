@@ -16,7 +16,7 @@
 - Git & Github
 - Visual Studio Code 
 - Google Chrome 
-- 
+- Virtual Box
 
 # Professional Accounts 
 GitHub: https://github.com/mariely09
