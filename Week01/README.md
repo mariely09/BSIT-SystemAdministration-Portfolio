@@ -1,24 +1,33 @@
 # Week 1 – Building My Professional Environment 
 
 ## Student Information 
-  Name: 
-  Course: 
-  Section: 
-  Date: 
+  Name: Mariely Ann L. Tolentino
+  Course: Bachelor of Science in Information Technology
+  Section: 4D-WAMD
+  Date: 08/07/2026
   
 # Objectives 
-(Write your own learning objectives.) --- 
+- To set up a clean, organized, and professional working environment for system administration tasks.
+- To understand the basics of version control and use Git and GitHub to manage and submit my portfolio.
+- To install and configure the essential software tools needed for this course.
+- To build a professional online identity through GitHub and LinkedIn.
 
 # Software Installed 
-List every software installed. --- 
+- Git – distributed version control system
+- Visual Studio Code – code editor
+- Google Chrome – web browser
+- 
 
 # Professional Accounts 
-GitHub: 
-LinkedIn: --- 
+GitHub: https://github.com/mariely09
+LinkedIn: https://www.linkedin.com/in/mariely-ann-tolentino-434a093a6/
 
 # Installation Screenshots 
 Insert screenshots. --- 
 
-# Challenges Encountered 
-Describe at least three problems encountered during installation or account setup 
-and explain how you solved them.
+# Challenges Encountered
+1. Git was not recognized in the command prompt. After installing, the `git` command showed "'git' is not recognized as an internal or external command." I solved this by reinstalling Git, making sure the option to add Git to the system PATH was selected, and then restarting the terminal.
+
+2. GitHub verification email did not arrive. At first, the verification email never appeared in my inbox. I checked the Spam folder, requested a new verification email from GitHub settings, and was able to verify my account successfully.
+
+3. VirtualBox warned that hardware virtualization was disabled. During setup, the installer showed an error about virtualization being turned off. I restarted my computer, entered the BIOS/UEFI settings, enabled Intel VT-x / AMD-V, and after saving the changes the installation completed successfully.
