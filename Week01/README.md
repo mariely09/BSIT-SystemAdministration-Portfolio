@@ -13,9 +13,9 @@
 - To build a professional online identity through GitHub and LinkedIn.
 
 # Software Installed 
-- Git – distributed version control system
-- Visual Studio Code – code editor
-- Google Chrome – web browser
+- Git & Github
+- Visual Studio Code 
+- Google Chrome 
 - 
 
 # Professional Accounts 
