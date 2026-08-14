@@ -2,7 +2,6 @@
 
 > **Prepared by:** Mariely Ann Tolentino  
 > **Course & Section:** BSIT-4D WAMD
-> 
 > **Instructor:** John Randolf M. Penaredondo, MIT  
 
 ---
