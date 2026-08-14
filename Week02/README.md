@@ -2,7 +2,7 @@
 
 > **Prepared by:** Mariely Ann Tolentino  
 > **Course & Section** BSIT-4D WAMD
-> **Instructor**  John Randolf M. Penaredondo, MIT  
+> **Instructor** John Randolf M. Penaredondo, MIT  
 
 ---
 
@@ -107,10 +107,10 @@ flowchart TD
 
 ## Technologies Used
 
-**Markdown and GitHub for documentation**
-**Draw.io for network diagramming**
-**Microsoft Word for the portfolio report**
-**Concepts: TCP/IP, VLANs, DHCP, RAID, 3-2-1 backup strategy**
+- Markdown and GitHub for documentation
+- Draw.io for network diagramming
+- Microsoft Word for the portfolio report
+- Concepts: TCP/IP, VLANs, DHCP, RAID, 3-2-1 backup strategy
 
 ---
 
