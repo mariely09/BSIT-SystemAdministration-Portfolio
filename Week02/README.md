@@ -5,7 +5,7 @@
 
 > **Instructor:** John Randolf M. Penaredondo, MIT  
 
---
+---
 
 ## Project Overview
 
