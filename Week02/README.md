@@ -1,38 +1,18 @@
-# 🏢 ABC Startup Solutions — Enterprise IT Infrastructure Plan
+# Week 2 Portfolio Project: Enterprise Infrastructure Planning for a Startup Company
 
-**Week 2 Portfolio Project: Enterprise Infrastructure Planning for a Startup Company**
-
-> **Prepared by:** [Your Name] — Junior System Administrator  
-> **Institution:** Laguna State Polytechnic University  
-> **Location:** Province of Laguna, Philippines  
-> **Date:** August 2026  
-
-[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)](#) [![Platform](https://img.shields.io/badge/Platform-Windows%2011%20Pro%20%7C%20Ubuntu%20Server-blue)](#) [![Diagram](https://img.shields.io/badge/Diagram-Draw.io-orange)](#)
+> **Prepared by:** Mariely Ann Tolentino  
+> **Course & Section** BSIT-4D WAMD
+> **Instructor**  John Randolf M. Penaredondo, MIT  
 
 ---
 
-## 📑 Table of Contents
+## Project Overview
 
-- [Project Overview](#project-overview)
-- [Learning Objectives](#learning-objectives)
-- [Company Scenario](#company-scenario)
-- [Hardware Inventory Summary](#hardware-inventory-summary)
-- [Software Inventory Summary](#software-inventory-summary)
-- [Network Diagram](#network-diagram)
-- [Technologies Used](#technologies-used)
-- [Challenges Encountered](#challenges-encountered)
-- [Reflection](#reflection)
-- [References](#references)
+This project documents the complete, from-scratch design of an enterprise IT infrastructure for **ABC Startup Solutions**, a newly established 20-employee software development company. The plan covers company profiling, enterprise hardware and software inventories, network topology design, system administration role research, and strategic infrastructure recommendations including security, backup, and password policies aligned with industry standards such as **NIST SP 800-63B** and the **3-2-1 backup rule**.
 
 ---
 
-## 📋 Project Overview
-
-This project documents the complete, from-scratch design of an enterprise IT infrastructure for **ABC Startup Solutions**, a newly established 20-employee software development company. The plan covers company profiling, enterprise hardware and software inventories, network topology design, system administration role research, and strategic infrastructure recommendations — including security, backup, and password policies aligned with industry standards such as **NIST SP 800-63B** and the **3-2-1 backup rule**.
-
----
-
-## 🎯 Learning Objectives
+## Learning Objectives
 
 | # | Objective |
 |---|-----------|
@@ -45,56 +25,53 @@ This project documents the complete, from-scratch design of an enterprise IT inf
 
 ---
 
-## 🏢 Company Scenario
+## Company Scenario
 
 ABC Startup Solutions occupies a **single office floor** and currently has **no computers, no server, no network, no internet infrastructure, and no security policies**. The entire IT environment must be designed from zero (greenfield deployment).
 
-| Department | Employees | Primary IT Needs |
-|------------|----------:|------------------|
-| Information Technology | 5 | Developer workstations, virtualization, server administration |
-| Human Resources | 4 | Records management, payroll, document processing |
-| Finance | 5 | Accounting, budgeting, secure financial reporting |
-| Sales | 6 | Mobile laptops, presentations, CRM, client meetings |
-| **TOTAL** | **20** | |
+| Department | Employees |
+|------------|----------:|
+| Information Technology | 5 |
+| Human Resources | 4 | 
+| Finance | 5 | 
+| Sales | 6 
+| **TOTAL** | **20** |
 
 ---
 
-## 🖥️ Hardware Inventory Summary
+## Hardware Inventory Summary
 
-| # | Hardware | Qty | Deployment / Purpose |
-|---|----------|----:|----------------------|
-| 1 | Standard Office Desktops (i5 / 16GB / 512GB SSD) | 9 | Finance & HR daily operations |
-| 2 | Developer Workstations (i7 / 32GB / 1TB NVMe) | 5 | IT development, testing, virtualization |
-| 3 | Business Laptops | 6 | Sales mobility and client visits |
-| 4 | Loaner / Travel Laptop | 1 | Spare coverage for repairs and travel |
-| 5 | Tower Server (Xeon / 64GB ECC / RAID) | 1 | Ubuntu Server: DNS, DHCP, file, backup, auth |
-| 6 | Business Router | 1 | Edge routing, VPN, QoS |
-| 7 | Next-Generation Firewall | 1 | UTM, IPS, web filtering |
-| 8 | 48-Port PoE+ Managed Switch | 1 | Wired backbone and AP power delivery |
-| 9 | Wi-Fi 6 Access Points | 2 | Wireless coverage, capacity, redundancy |
-| 10 | Multifunction Network Printer | 1 | Shared print / scan / copy |
-| 11 | UPS Units (1500VA / 1000VA) | 2 | Power protection for critical equipment |
-| 12 | 4-Bay NAS (RAID) | 1 | Centralized storage and local backups |
-| 13 | 8TB External Backup Drives | 2 | Offline rotation (3-2-1 strategy) |
-| 14 | 24" Monitors | 40 | Dual-display productivity for all staff |
+| ASSET ID | HARDWARE | QUANTITY | DEPARTMENT | PURPOSE |
+|:---------|:---------|:--------:|:-----------|:--------|
+| HW-001 | Desktop Computers | 14 | Finance, HR, and IT | Used for daily office tasks such as document processing, spreadsheets, payroll, accounting, email, and internal file access. |
+| HW-002 | Laptops | 7 | Sales and IT | Used by sales employees for client meetings, presentations, proposals, customer follow-ups, remote work, and cloud-based applications. |
+| HW-003 | Server | 1 | IT | Hosts company server services such as file storage support, backups, DNS, DHCP, authentication, monitoring, and internal tools. |
+| HW-004 | Router | 1 | IT | Provides internet connection, firewall protection, VPN support, network routing, and basic network security. |
+| HW-005 | Switch | 1 | IT | Connects all wired devices and provides Power over Ethernet for wireless access points and future network devices. |
+| HW-006 | Printer | 1 | All Departments | Provides printing, scanning, and copying services for all employees in the office. |
+| HW-007 | UPS | 2 | IT and Finance | Provides backup power for the server, router, switch, and NAS during power interruptions. |
+| HW-008 | Wireless Access Point | 2 | IT | Provides reliable Wi-Fi coverage for laptops, mobile devices, and guest users across the office floor. |
+| HW-009 | NAS Storage | 1 | IT | Provides centralized file storage, departmental shared folders, backup storage, and file recovery support. |
+| HW-010 | External Backup Drive | 2 | IT | Used for offline backup rotation and disaster recovery protection. |
+| HW-011 | Monitors | 40 | All departments | Provides dual-monitor setup for each employee to improve productivity and multitasking. |
 
 ---
 
-## 💿 Software Inventory Summary
+## Software Inventory Summary
 
-| Software | Version | License | Primary Purpose |
-|----------|---------|---------|-----------------|
-| [Windows 11 Pro](https://www.microsoft.com/en-us/windows/business/windows-11-pro) | 25H2 | OEM / Device | Client OS, BitLocker, domain support |
-| [Ubuntu Server](https://ubuntu.com/server/docs) | 24.04 LTS | Open Source | Server OS and core services |
-| Microsoft Office (M365 Apps) | Current Channel | Subscription (20 users) | Productivity suite |
-| [VS Code](https://code.visualstudio.com/docs) | Latest Stable | Free | Code editing and scripting |
-| [Git](https://git-scm.com/doc) | Latest Stable | Open Source | Distributed version control |
-| [GitHub Desktop](https://docs.github.com/en/desktop) | Latest Stable | Free | GUI Git client |
-| [VirtualBox](https://www.virtualbox.org/manual/) | Latest Stable | Open Source (GPL) | Virtualization and lab testing |
-| Google Chrome | Latest Stable | Free | Browsing and web app testing |
-| [Microsoft Defender](https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-antivirus) | Latest | Included with Win 11 Pro | Endpoint protection |
-| [AnyDesk](https://anydesk.com/en/features/security) | Latest Stable | Commercial | Remote support |
-| 7-Zip | Latest Stable | Open Source (LGPL) | Compression and archiving |
+| SOFTWARE | VERSION | LICENSE | PURPOSE |
+|:---------|:--------|:--------|:--------|
+| Windows 11 Pro | 25H2 or latest stable build | OEM / Device license for company desktops and laptops | Primary operating system for employee computers; provides domain support, BitLocker encryption, security features, and compatibility with business software |
+| Ubuntu Server | 24.04 LTS | Open-source / Free | Server operating system for file services, backups, DNS, DHCP, authentication support, monitoring, and internal tools |
+| Microsoft Office | Microsoft 365 Apps for Business, Current Channel | Subscription, per user | Productivity suite for documents, spreadsheets, presentations, email, and cloud collaboration |
+| VS Code | Latest stable version | Free / Microsoft license | Code editor for software development, scripting, configuration files, and documentation |
+| Git | Latest stable version | Open-source | Distributed version control system for tracking code changes and supporting collaborative development |
+| GitHub Desktop | Latest stable version | Free | Graphical Git client for easier repository management and simplified version control tasks |
+| VirtualBox | Latest stable version | Open-source / GPL | Virtualization software for testing operating systems, applications, and network configurations in a safe environment |
+| Google Chrome | Latest stable version | Free / Chrome Enterprise | Web browser for cloud applications, online tools, research, and web application testing |
+| Microsoft Defender | Latest platform and signature updates | Included with Windows 11 Pro | Endpoint protection against viruses, malware, ransomware, and other security threats |
+| AnyDesk | Latest stable version | Commercial remote-support license | Secure remote access and technical support tool for troubleshooting user computers |
+| 7-Zip | Latest stable version | Open-source / LGPL | File compression and extraction tool for archives, installers, logs, and backup files |
 
 ---
 
@@ -128,21 +105,16 @@ flowchart TD
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-| Category | Technology | Role in Project |
-|----------|------------|-----------------|
-| Operating Systems | Windows 11 Pro, Ubuntu Server 24.04 LTS | Client and server platforms |
-| Networking | [FortiGate NGFW](https://www.fortinet.com/products/next-generation-firewall), [Ubiquiti UniFi](https://ui.com/networking), [Cisco Switches](https://www.cisco.com/c/en/us/products/switches/index.html) | Edge security, switching, wireless |
-| Servers & Storage | [Dell PowerEdge](https://www.dell.com/en-us/shop/servers), Synology NAS, APC UPS | Compute, centralized storage, power protection |
-| Development | VS Code, Git, GitHub Desktop, VirtualBox | Software development and testing workflow |
-| Security & Policy | Microsoft Defender, [NIST SP 800-63B](https://pages.nist.gov/800-63-3/sp800-63b.html) | Endpoint protection and password policy |
-| Backup | [Veeam 3-2-1 Guidance](https://www.veeam.com/blog/321-backup-rule.html) | Backup and disaster recovery strategy |
-| Documentation | [Draw.io](https://app.diagrams.net/), Markdown | Network diagramming and project documentation |
+**Markdown and GitHub for documentation**
+**Draw.io for network diagramming**
+**Microsoft Word for the portfolio report**
+**Concepts: TCP/IP, VLANs, DHCP, RAID, 3-2-1 backup strategy**
 
 ---
 
-## ⚠️ Challenges Encountered
+## Challenges Encountered
 
 - **Balancing budget vs. enterprise standards** — Selecting hardware that meets professional requirements without overspending for a 20-person startup required careful justification of every line item.
 - **Designing VLAN segmentation** — Deciding how to isolate IT, HR/Finance, Sales, and Guest traffic while keeping shared resources (server, printer) accessible demanded critical thinking about both connectivity and security.
@@ -152,7 +124,7 @@ flowchart TD
 
 ---
 
-## 💭 Reflection
+## Reflection
 
 Designing a complete IT infrastructure from scratch for ABC Startup Solutions has been one of the most eye-opening experiences in my journey toward becoming a System Administrator. Through this project, I learned that enterprise IT is not merely about purchasing computers and connecting them to the internet; it is about strategically aligning technology with the specific operational needs of every department. I gained practical knowledge in selecting enterprise hardware, managing software licensing, structuring VLANs, and establishing robust security and backup policies. Most importantly, I learned how each individual component—from the ISP modem to the end-user's dual monitors—must work together seamlessly to create a secure, scalable, and efficient working environment.
 
@@ -164,7 +136,7 @@ Ultimately, this project will help me become a significantly better System Admin
 
 ---
 
-## 📚 References
+## References
 
 **Certifications and Roles Research**
 - CompTIA A+ — https://www.comptia.org/certifications/a
@@ -189,5 +161,3 @@ Ultimately, this project will help me become a significantly better System Admin
 - Draw.io / Diagrams.net — https://app.diagrams.net/
 
 ---
-
-<p align="center"><em>© 2026 ABC Startup Solutions IT Infrastructure Plan • Prepared for academic portfolio purposes</em></p>
