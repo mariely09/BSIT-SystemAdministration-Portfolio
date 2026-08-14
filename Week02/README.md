@@ -75,33 +75,8 @@ ABC Startup Solutions occupies a **single office floor** and currently has **no 
 
 ---
 
-## 🌐 Network Diagram
+## Network Diagram
 
-<p align="center">
-  <img src="./assets/network-diagram.png" alt="ABC Startup Solutions Enterprise Network Topology" width="850"/>
-</p>
-<p align="center"><em>Figure 1: Enterprise Network Topology (Draw.io export — <a href="./assets/network-diagram.pdf">PDF version</a>)</em></p>
-
-<details>
-<summary>📐 View text-based topology (Mermaid)</summary>
-
-```mermaid
-flowchart TD
-    Internet(((INTERNET)) --> Modem[ISP Modem / ONT]
-    Modem --> Router[Edge Router]
-    Router --> Firewall[Hardware Firewall]
-    Firewall --> Switch{48-Port Core Switch}
-
-    Switch --> Server[Ubuntu Server & NAS]
-    Switch --> Printer[Network Printer]
-    Switch --> WAP[Wireless Access Points]
-    Switch --> IT[IT Dept - 5 Desktops]
-    Switch --> HR[HR Dept - 4 Desktops]
-    Switch --> Finance[Finance Dept - 5 Desktops]
-    WAP --> Sales[Sales Dept - 6 Laptops]
-```
-
-</details>
 
 ---
 
