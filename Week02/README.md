@@ -1,9 +1,8 @@
 # Week 2 Portfolio Project: Enterprise Infrastructure Planning for a Startup Company
 
-> **Name:** Mariely Ann Tolentino  
-> **Course & Section:** BSIT-4D WAMD
-
-> **Instructor:** John Randolf M. Penaredondo, MIT  
+**Name:** Mariely Ann Tolentino  
+**Course & Section:** BSIT-4D WAMD
+**Instructor:** John Randolf M. Penaredondo, MIT  
 
 ---
 
