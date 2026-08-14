@@ -15,14 +15,12 @@ This project documents the complete, from-scratch design of an enterprise IT inf
 
 ## Learning Objectives
 
-| # | Objective |
-|---|-----------|
-| 1 | Design enterprise hardware and software inventories aligned with departmental business needs. |
-| 2 | Create a logical, professional network topology using industry-standard diagramming tools. |
-| 3 | Apply core networking concepts (VLANs, PoE, structured CAT6 cabling, firewall segmentation). |
-| 4 | Research system administration roles, responsibilities, tools, and certifications. |
-| 5 | Formulate security, backup, and password policies based on recognized industry frameworks. |
-| 6 | Document infrastructure professionally using Markdown, tables, and GitHub conventions. |
+- Design enterprise hardware and software inventories aligned with departmental business needs. 
+- Create a logical, professional network topology using industry-standard diagramming tools. 
+- Apply core networking concepts (VLANs, PoE, structured CAT6 cabling, firewall segmentation). 
+- Research system administration roles, responsibilities, tools, and certifications. 
+- Formulate security, backup, and password policies based on recognized industry frameworks. 
+-  Document infrastructure professionally using Markdown, tables, and GitHub conventions. 
 
 ---
 
