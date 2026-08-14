@@ -77,7 +77,11 @@ ABC Startup Solutions occupies a **single office floor** and currently has **no 
 
 ## Network Diagram
 
-![Alt Text](diagrams-ng-Enterprise Network Diagram .drawio.png)
+![Enterprise Network Diagram](diagrams/Enterprise%20Network%20Diagram%20.drawio.png)
+
+*Figure 1: ABC Startup Solutions – Enterprise Network Topology*
+
+📎 [View PDF version](diagrams/Enterprise%20Network%20Diagram.pdf)
 
 ---
 
