@@ -28,7 +28,7 @@ This project documents the complete, from-scratch design of an enterprise IT inf
 
 ## Company Scenario
 
-ABC Startup Solutions occupies a **single office floor** and currently has **no computers, no server, no network, no internet infrastructure, and no security policies**. The entire IT environment must be designed from zero (greenfield deployment).
+ABC Startup Solutions occupies a **single office floor** and currently has **no computers, no server, no network, no internet infrastructure, and no security policies**.
 
 | Department | Employees |
 |------------|----------:|
