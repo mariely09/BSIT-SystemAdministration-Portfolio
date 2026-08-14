@@ -77,6 +77,7 @@ ABC Startup Solutions occupies a **single office floor** and currently has **no 
 
 ## Network Diagram
 
+![Alt Text](diagrams-ng-EnterpriseNetworkDiagram.png)
 
 ---
 
